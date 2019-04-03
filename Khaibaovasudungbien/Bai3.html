@@ -1,0 +1,18 @@
+<button type="button1" onclick="inpa();">Nhap a</button>
+<button type="button2" onclick="inpb();">Nhap b</button>
+<button type="button3" onclick="showMessage();">Ket qua</button>
+<script>
+	var a,b,c;
+	function inpa(){
+		a = parseInt(prompt());
+	}
+	function inpb(){
+		b = parseInt(prompt());
+	}
+	function showMessage() {
+		c = a/b;
+		if (c == 0) alert (a+' chia het cho '+b);
+		else alert(a +' khong chia het cho '+ b);
+		alert(c);
+	}
+</script>
