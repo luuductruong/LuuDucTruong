@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>Bài 2: Chuyển dổi độ C sang dộ F</head>
+<body>
+<form name="Bai2">
+	<p>
+	Nhập giá trị độ C: <input type="text" name="doc"> </input> </br>
+	</p>
+	<button onclick="tinh();">Chuyển đổi</button>
+	<script>
+		function tinh(){
+			var c = parseFloat(document.forms["Bai2"]["doc"].value);
+			var ketqua = 9*c/5+32
+			alert("Giá trị độ F là: "+ ketqua);
+		}
+	</script>
+</form>
+</body>
+</html>

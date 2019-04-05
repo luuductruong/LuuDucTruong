@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>Ứng dụng cho biết chiều cao của bạn khi nhập chiều cao vào</head>
+<body>
+<form name="Bai1">
+	<p>
+	Nhập chiều cao của bạn: <input type="text" name="ly"> </input> </br>
+	</p>
+	<button onclick="tinh();">Xác định</button>
+	<script>
+		function tinh(){
+			var ly = document.forms["Bai1"]["ly"].value;
+			alert("Chiều cao của bạn là: "+ ly);
+		}
+	</script>
+</form>
+</body>
+</html>

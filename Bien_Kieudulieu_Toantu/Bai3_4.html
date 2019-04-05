@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>Bài 3-4: Tính chu vi, diện tích hình tròn</head>
+<body>
+<form name="Bai3-4">
+	<p>
+	Nhập bán kính: <input type="text" name="bankinh"> </input> </br>
+	</p>
+	<button onclick="tinhchuvi();">Chu vi</button> &nbsp; &nbsp; &nbsp;
+	<button onclick="tinhdientich();">Diện tích</button> <br>
+</form>
+	<h4 id="kq">Đây là kết quả</h4>
+</body>
+</html>
+
+<script>
+		function tinhchuvi(){
+			var r = parseFloat(document.forms["Bai3-4"]["bankinh"].value);
+			var result = Math.PI * r * 2
+			//alert("Chu vi là: "+ result);
+			document.getElementById("kq").innerHTML = "Chu vi là: "+result;
+		}
+		function tinhdientich(){
+			var r = parseFloat(document.forms["Bai3-4"]["bankinh"].value);
+			var result = Math.PI * r * r;
+			//alert("Diện tích là: "+ result);
+			document.getElementById("kq").innerHTML = "Diện tích là: "+result;
+		}
+	</script>

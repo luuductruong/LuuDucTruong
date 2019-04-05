@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>Bai 1: Tinh diem trung binh</head>
+<body>
+<form name="Bai1">
+	<p>
+	Ly: <input type="text" name="ly"> </input> </br>
+	</p>
+	<p>
+	Hoa: <input id="hoa"> </input> </br>
+	</p>
+	<p>
+	Sinh: <input id="sinh"> </input> </br>
+	</p>
+	<button onclick="tinh();">Tinh</button>
+	<script>
+		function tinh(){
+			var ly = parseFloat(document.forms["Bai1"]["ly"].value);
+			var hoa = parseFloat(document.forms["Bai1"]["hoa"].value);
+			var sinh = parseFloat(document.forms["Bai1"]["sinh"].value);
+			var ketqua = (ly + hoa + sinh) / 3;
+			alert("Dien trung binh la: "+ ketqua);
+		}
+	</script>
+</form>
+</body>
+</html>
