@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>Ứng dụng máy tính</head>
+<body>
+<form name="maytinh">
+	<input name="num1" id="num1" size=10> </input> &nbsp; &nbsp;
+	<input name="num2" id="num2" size=10> </input> <br>
+	<button onclick="cong();">Cộng</button> &nbsp; &nbsp;
+	<button onclick="tru();">Trừ</button> &nbsp; &nbsp;
+	<button onclick="nhan();">Nhân</button> &nbsp; &nbsp;
+	<button onclick="chia();">Chia</button>
+</form>
+</body>
+</html>
+
+<script>
+	var a,b,result
+	function laybien(){
+		a = parseFloat(document.forms["maytinh"]["num1"].value);
+		b = parseFloat(document.forms["maytinh"]["num2"].value);
+	}
+	function cong(){
+		laybien();
+		result = a + b;
+		alert("Kết quả là: "+ result);
+	}
+	function tru(){
+		laybien();
+		result = a - b;
+		alert("Kết quả là: "+ result);
+	}
+	function nhan(){
+		laybien();
+		result = a * b;
+		alert("Kết quả là: "+ result);
+	}
+	function chia(){
+		laybien();
+		if (b == 0) alert("Lỗi chia cho 0");
+		else {
+			result = a / b;
+			alert("Kết quả là: "+ result);
+		}
+	}
+</script>
